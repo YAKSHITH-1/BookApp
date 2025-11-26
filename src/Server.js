@@ -1,12 +1,15 @@
 import express from "express";
 import "dotenv/config";
 import cors from "cors";
+import cron from "../lib/cron.js";
 
 import authroutes from "../routes/authroutes.js";
 import { connectDB } from "../lib/db.js";
 import bookroutes from "../routes/bookroutes.js";
 
+
 const app = express();
+cron.start();
 
 app.use(express.json());
 
@@ -28,4 +31,4 @@ const mongoURI = process.env.MONGO_URI;
         process.exit(1);
     }
 })();
- 
+
