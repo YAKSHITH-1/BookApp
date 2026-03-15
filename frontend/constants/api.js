@@ -1,12 +1,12 @@
 import { Platform } from 'react-native';
 
-const DEFAULT_HOST = '192.168.1.6';
+const DEFAULT_HOST = 'https://bookapp-qkkt.onrender.com';
 const DEFAULT_PORT = '3000';
 
 let host = DEFAULT_HOST;
 if (Platform.OS === 'android') {
   // Android emulators map host machine's 127.0.0.1 to 10.0.2.2
-  host = process.env.API_HOST || '10.0.2.2';
+  host = "https://bookapp-qkkt.onrender.com" || '10.0.2.2';
 }
 
 export const API_URL = `http://${host}:${DEFAULT_PORT}`;
