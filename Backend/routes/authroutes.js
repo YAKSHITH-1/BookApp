@@ -31,7 +31,7 @@ router.post("/register", async (req, res) => {
     const emailNorm = email.toLowerCase().trim();
 
 
-    const emailRegex = /^[a-z0-9@.]+$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(emailNorm)) {
       return res.status(400).json({ message: "Email can only contain letters, numbers, @ and ." });
     }
