@@ -8,7 +8,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "vercel-build":"expo export"
+    "vercel-build": "expo export"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
@@ -16,7 +16,7 @@
     "@react-navigation/bottom-tabs": "^7.4.0",
     "@react-navigation/elements": "^2.6.3",
     "@react-navigation/native": "^7.1.8",
-    "expo": "^54.0.27",
+    "expo": "^54.0.33",
     "expo-constants": "^18.0.11",
     "expo-file-system": "^19.0.20",
     "expo-font": "^14.0.10",
